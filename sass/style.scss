@@ -16,6 +16,10 @@ $transition: all 0.3s;
 
 /* Global */
 
+:root {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: $primary-font;
 }
@@ -153,6 +157,7 @@ body {
 
 .services {
 	overflow: hidden;
+
 	.row {
 		justify-content: center;
 
@@ -232,6 +237,36 @@ body {
 				font-size: 1rem;
 				font-family: $secondary-font;
 				font-style: italic;
+			}
+		}
+	}
+}
+
+/* Footer */
+
+.footer {
+	padding: 2em 7.2em;
+	// margin: 1em;
+
+	.container {
+		p {
+			padding: 2em;
+			font-size: 0.9rem;
+		}
+
+		.footer-icon {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0.8em;
+			width: 45px;
+			height: 45px;
+			background: $primary-color;
+			border-radius: 50%;
+
+			i {
+				font-size: 1.2rem;
+				color: $secondary-color;
 			}
 		}
 	}
