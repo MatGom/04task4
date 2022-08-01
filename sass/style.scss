@@ -134,13 +134,27 @@ body {
 /* Media */
 
 @media (max-width: 575px) {
-	// .nav {
-	// 	.row {
-	// 		.menu-item {
-	// 			width: 100%;
-	// 		}
-	// 	}
-	// }
+	.nav {
+		position: relative;
+		background: $primary-color;
+
+		.row {
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+
+			.nav-menu {
+				display: flex;
+				flex-direction: column;
+			}
+
+			.menu-item {
+				width: 100%;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+	}
 
 	.header {
 		.wrapper {
@@ -155,29 +169,12 @@ body {
 
 			.header-btn {
 				padding: 1em 2.4em;
-				font-size: 1em;
 			}
 		}
 	}
 }
 
 @media (min-width: 576px) {
-	// .nav {
-	// 	position: relative;
-	// 	background: $primary-color;
-
-	// 	.row {
-	// 		display: flex;
-	// 		flex-direction: column;
-	// 		text-align: center;
-
-	// 		.nav-menu {
-	// 			flex-wrap: wrap;
-	// 			justify-content: center;
-	// 		}
-	// 	}
-	// }
-
 	.header {
 		.wrapper {
 			.header-title {
@@ -191,21 +188,20 @@ body {
 
 			.header-btn {
 				padding: 1em 2.2em;
-				font-size: 1.2em;
+			}
+		}
+	}
+
+	.nav {
+		.row {
+			.logo {
+				text-align: center;
 			}
 		}
 	}
 }
 
 @media (min-width: 767px) {
-	// .nav {
-	// 	.row {
-	// 		.logo {
-	// 			text-align: center;
-	// 		}
-	// 	}
-	// }
-
 	.header {
 		.wrapper {
 			.header-title {
@@ -217,8 +213,8 @@ body {
 			}
 
 			.header-btn {
-				padding: 1.2em 2.4em;
-				// font-size: 0.8em;
+				padding: 1.2em 1.8em;
+				font-size: 1.2rem;
 			}
 		}
 	}
@@ -237,7 +233,6 @@ body {
 
 			.header-btn {
 				padding: 1em 2.8em;
-				// font-size: 0.8em;
 			}
 		}
 	}
