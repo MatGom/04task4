@@ -28,8 +28,7 @@ body {
 	left: 0;
 	right: 0;
 	padding: 1.4em 0;
-	background: #333;
-	// background: transparent;
+	background: transparent;
 
 	.logo {
 		font-family: $secondary-font;
@@ -64,6 +63,13 @@ body {
 		}
 	}
 }
+
+/* Header */
+
+// .header {
+// 	background-image: url('../images/hero-bg.jpg');
+// 	height: 100vh;
+// }
 
 /* Media */
 
