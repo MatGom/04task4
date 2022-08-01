@@ -20,6 +20,20 @@ body {
 	font-family: $primary-font;
 }
 
+.section-title {
+	margin-top: 4em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.section-subtitle {
+	margin: 0.5em 0 2em 0;
+	text-align: center;
+	font-weight: 300;
+	font-style: italic;
+	font-family: $secondary-font;
+}
+
 /* Navigation */
 
 .nav {
@@ -132,6 +146,47 @@ body {
 	}
 }
 
+/* Services */
+
+.services {
+	.row {
+		justify-content: center;
+
+		.services-card {
+			padding: 3em;
+
+			.card-icon {
+				margin: 0 auto;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 70px;
+				height: 70px;
+				border: 3px solid $main-color;
+				border-radius: 50%;
+
+				i {
+					font-size: 2rem;
+					color: $main-color;
+				}
+			}
+
+			.card-title {
+				margin: 1.5em;
+				font-size: 1rem;
+				text-align: center;
+			}
+
+			p {
+				line-height: 1.6em;
+				font-family: $secondary-font;
+				color: $primary-color;
+				text-align: center;
+			}
+		}
+	}
+}
+
 /* Media */
 
 @media (max-width: 575px) {
@@ -176,6 +231,14 @@ body {
 }
 
 @media (min-width: 576px) {
+	.section-title {
+		font-size: 1.6rem;
+	}
+
+	.section-subtitle {
+		font-size: 1.4rem;
+	}
+
 	.header {
 		.wrapper {
 			.header-title {
@@ -197,6 +260,16 @@ body {
 		.row {
 			.logo {
 				text-align: center;
+			}
+		}
+	}
+
+	.services {
+		.row {
+			.services-card {
+				.card-title {
+					font-size: 1.2rem;
+				}
 			}
 		}
 	}
@@ -222,6 +295,14 @@ body {
 }
 
 @media (min-width: 991px) {
+	.section-title {
+		font-size: 2.2rem;
+	}
+
+	.section-subtitle {
+		font-size: 1.6rem;
+	}
+
 	.header {
 		.wrapper {
 			.header-title {
@@ -234,6 +315,20 @@ body {
 
 			.header-btn {
 				padding: 1em 2.8em;
+			}
+		}
+	}
+
+	.services {
+		.row {
+			.services-card {
+				.card-title {
+					font-size: 1.4rem;
+				}
+
+				p {
+					font-size: 1em;
+				}
 			}
 		}
 	}
