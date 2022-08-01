@@ -149,11 +149,13 @@ body {
 /* Services */
 
 .services {
+	overflow: hidden;
 	.row {
 		justify-content: center;
 
 		.services-card {
-			padding: 3em;
+			margin: 1em;
+			padding: 3em 0;
 
 			.card-icon {
 				margin: 0 auto;
@@ -182,6 +184,51 @@ body {
 				font-family: $secondary-font;
 				color: $primary-color;
 				text-align: center;
+			}
+		}
+	}
+}
+
+/* Portfolio */
+
+.portfolio {
+	background: $section-color;
+	overflow: hidden;
+
+	.row {
+		justify-content: center;
+
+		.portfolio-card {
+			margin: 1em;
+			padding: 0;
+			background: $secondary-color;
+
+			.card-img {
+				display: flex;
+
+				img {
+					margin: 0 auto;
+					width: 100%;
+					height: 300px;
+					object-fit: cover;
+				}
+			}
+
+			.card-title,
+			p {
+				text-align: center;
+			}
+
+			.card-title {
+				margin-top: 2em;
+				font-size: 1.2rem;
+			}
+
+			p {
+				margin-bottom: 2em;
+				font-size: 1rem;
+				font-family: $secondary-font;
+				font-style: italic;
 			}
 		}
 	}
@@ -329,6 +376,16 @@ body {
 				p {
 					font-size: 1em;
 				}
+			}
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.portfolio {
+		.row {
+			.portfolio-card {
+				margin-bottom: 3em;
 			}
 		}
 	}
