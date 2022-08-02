@@ -245,28 +245,39 @@ body {
 /* Footer */
 
 .footer {
-	padding: 2em 7.2em;
+	padding: 2em 0;
 	// margin: 1em;
 
 	.container {
-		p {
-			padding: 2em;
-			font-size: 0.9rem;
-		}
+		.row {
+			justify-content: space-evenly;
 
-		.footer-icon {
-			display: inline-flex;
-			justify-content: center;
-			align-items: center;
-			margin: 0.8em;
-			width: 45px;
-			height: 45px;
-			background: $primary-color;
-			border-radius: 50%;
+			p {
+				padding: 2em;
+				font-size: 0.9rem;
+				text-align: center;
+			}
 
-			i {
-				font-size: 1.2rem;
-				color: $secondary-color;
+			.footer-icons {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			.footer-icon {
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				margin: 0.8em;
+				width: 45px;
+				height: 45px;
+				background: $primary-color;
+				border-radius: 50%;
+
+				i {
+					font-size: 1.2rem;
+					color: $secondary-color;
+				}
 			}
 		}
 	}
@@ -310,6 +321,14 @@ body {
 
 			.header-btn {
 				padding: 1em 2.4em;
+			}
+		}
+	}
+
+	.footer {
+		.container {
+			.row {
+				width: 100%;
 			}
 		}
 	}
